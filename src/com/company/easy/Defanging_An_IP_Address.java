@@ -1,4 +1,4 @@
-package com.company.easy.string;
+package com.company.easy;
 
 public class Defanging_An_IP_Address {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.company.easy.arrays;
+package com.company.easy;
 
 public class Find_smallest_letter_greater_than_target {
     public static void main(String[] args) {

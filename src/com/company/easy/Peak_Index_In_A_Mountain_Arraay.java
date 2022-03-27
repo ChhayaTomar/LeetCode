@@ -1,4 +1,4 @@
-package com.company.easy.binarySearch;
+package com.company.easy;
 
 public class Peak_Index_In_A_Mountain_Arraay{
     public static int peakIndex(int[] arr){

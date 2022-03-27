@@ -1,4 +1,4 @@
-package com.company.easy.arrays;
+package com.company.easy;
 
 public class Convert_1D_to_2D_Array {
     public static void main(String[] args) {

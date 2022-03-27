@@ -1,4 +1,4 @@
-package com.company.easy.string;
+package com.company.easy;
 
 public class To_Lower_Case {
     public static void main(String[] args) {

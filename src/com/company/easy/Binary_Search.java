@@ -1,4 +1,4 @@
-package com.company.easy.binarySearch;
+package com.company.easy;
 
 public class Binary_Search {
 

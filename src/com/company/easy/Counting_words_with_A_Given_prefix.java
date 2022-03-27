@@ -1,4 +1,4 @@
-package com.company.easy.arrays;
+package com.company.easy;
 
 public class Counting_words_with_A_Given_prefix {
     public static int prefixCount(String[] words, String pref) {
