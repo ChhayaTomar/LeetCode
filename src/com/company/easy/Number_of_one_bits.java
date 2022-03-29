@@ -5,7 +5,6 @@ public class Number_of_one_bits {
         int n = 00000000000000000000000000001011;
         System.out.println(hammingWeight(n));
     }
-
     public static int hammingWeight(int n) {
         String s = Integer.toBinaryString(n);
         int count = 0;

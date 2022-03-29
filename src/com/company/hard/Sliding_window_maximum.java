@@ -10,7 +10,6 @@ public class Sliding_window_maximum {
         int[] res = maxSlidingWindow(nums, k);
         System.out.println(Arrays.toString(res));
     }
-
     public static int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         int[] arr = new int[n - k + 1];

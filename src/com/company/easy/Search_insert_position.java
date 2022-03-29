@@ -6,7 +6,6 @@ public class Search_insert_position {
         int target = 0;
         System.out.println(searchInsert(nums, target));
     }
-
     public static int searchInsert(int[] nums, int target) {
         int n = nums.length;
         int low = 0;

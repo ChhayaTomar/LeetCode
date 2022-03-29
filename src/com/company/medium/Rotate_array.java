@@ -9,7 +9,6 @@ public class Rotate_array {
         rotateArr(nums, k);
         System.out.println(Arrays.toString(nums));
     }
-
     //4 3 2 1 7 6 5 ---- 5 6 7 1 2 3 4
     private static void rotateArr(int[] nums, int k) {
         int n = nums.length;

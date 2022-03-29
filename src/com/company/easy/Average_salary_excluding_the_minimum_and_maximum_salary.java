@@ -7,7 +7,6 @@ public class Average_salary_excluding_the_minimum_and_maximum_salary {
         int[] salary = {4000, 3000, 1000, 2000};
         System.out.println(average(salary));
     }
-
     private static double average(int[] salary) {
         int n = salary.length;
         int max = salary[0];
