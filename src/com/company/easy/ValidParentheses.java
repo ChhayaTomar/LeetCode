@@ -4,24 +4,25 @@ import java.util.Stack;
 
 public class ValidParentheses {
     public static void main(String[] args) {
-        String s="(){}[]";
+        String s = "(){}[]";
         System.out.println(isValid(s));
     }
-    public static boolean isValid(String s){
-        Stack<Character> stack=new Stack<>();
-        for (int i = 0; i <s.length() ; i++) {
-            char curr=s.charAt(i);
 
-            if(curr=='(' || curr=='{' || curr=='['){
+    public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            char curr = s.charAt(i);
+
+            if (curr == '(' || curr == '{' || curr == '[') {
                 stack.push(curr);
-            }else{
-                if(stack.isEmpty()) return false;
-                char top=stack.peek();
-                if((top=='(' && curr==')') ||
-                        (top=='{' && curr=='}') ||
-                            (top=='[' && curr==']')){
-                            stack.pop();
-                }else return false;
+            } else {
+                if (stack.isEmpty()) return false;
+                char top = stack.peek();
+                if ((top == '(' && curr == ')') ||
+                        (top == '{' && curr == '}') ||
+                        (top == '[' && curr == ']')) {
+                    stack.pop();
+                } else return false;
             }
         }
         return stack.isEmpty();

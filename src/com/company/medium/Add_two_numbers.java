@@ -1,16 +1,18 @@
 package com.company.medium;
 
 public class Add_two_numbers {
-    public class Node{
+    public class Node {
         int data;
         Node next;
 
-        Node(int data){
-            this.data=data;
-            this.next=null;
+        Node(int data) {
+            this.data = data;
+            this.next = null;
         }
     }
-    Node head=null;
+
+    Node head = null;
+
     public void insertAtLast(int data) {
         Node node = new Node(data);
         if (head == null) {
@@ -27,8 +29,8 @@ public class Add_two_numbers {
     }
 
     public static void main(String[] args) {
-        Add_two_numbers l1=new Add_two_numbers();
-        Add_two_numbers l2=new Add_two_numbers();
+        Add_two_numbers l1 = new Add_two_numbers();
+        Add_two_numbers l2 = new Add_two_numbers();
         l1.insertAtLast(2);
         l1.insertAtLast(4);
         l1.insertAtLast(3);

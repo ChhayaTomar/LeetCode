@@ -5,20 +5,21 @@ import java.util.Map;
 
 public class Remove_duplicates_from_sorted_array {
     public static void main(String[] args) {
-        int nums[]={1,1,2};
+        int nums[] = {1, 1, 2};
         System.out.println(removeDuplicates(nums));
     }
-    public static int removeDuplicates(int[] nums){
-        int n=nums.length;
-        int count=0;
-        for (int i = 1; i <n ; i++) {
-            if(nums[i]==nums[i-1]){
+
+    public static int removeDuplicates(int[] nums) {
+        int n = nums.length;
+        int count = 0;
+        for (int i = 1; i < n; i++) {
+            if (nums[i] == nums[i - 1]) {
                 count++;
-            }else {
+            } else {
                 nums[i - count] = nums[i];
             }
         }
-        return  (n-count);
+        return (n - count);
     }
 }
 //    HashMap<Integer,Integer> hmap=new HashMap<>();
