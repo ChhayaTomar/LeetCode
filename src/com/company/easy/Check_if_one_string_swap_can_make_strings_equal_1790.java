@@ -9,28 +9,25 @@ public class Check_if_one_string_swap_can_make_strings_equal_1790 {
 
     private static boolean areAlmostEqual(String s1, String s2) {
         int count=0;
-        int c1=0,c2=0;
-        for(int i=0;i<s1.length();i++){
-            if(s1.charAt(i) != s2.charAt(i)) {
+        char s1c1='a', s1c2='z';
+        char s2c1='a', s2c2='z';
+        for(int i=0;i<s1.length();i++) {
+            if (s1.charAt(i) != s2.charAt(i)) {
                 count += 1;
-                if(count==1) {
-                    c1 = i;
+                if(count==1){
+                    s1c1=s1.charAt(i);
+                    s2c1=s2.charAt(i);
                 }
                 if(count==2){
-                    c2=i;
+                    s1c2=s1.charAt(i);
+                    s2c2=s2.charAt(i);
                 }
+                if(count>2) break;
             }
         }
-        //swapping ith and jth char in s1
-        if(count==2){
-//            char temp=s1.charAt(c1);
-//            s1.charAt(c1)=s1.charAt(c2);
-//            s1.charAt(c2)=temp;
-            int temp=c1;
-            c1=c2;
-            c2=temp;
-        }
-        if(count==2 || count==0) return true;
-        else return false;
+        if(count==0) return true;
+        if(count==2 && s1c1==s2c2 && s1c2==s2c1) return true;
+
+        return false;
     }
 }
