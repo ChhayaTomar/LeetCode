@@ -2,7 +2,7 @@ package com.company.easy;
 
 import java.util.Stack;
 
-public class ValidParentheses {
+public class ValidParentheses_20 {
     public static void main(String[] args) {
         String s = "(){}[]";
         System.out.println(isValid(s));
