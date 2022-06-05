@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 public class How_many_numbers_are_smaller_than_the_current_number_1365 {
     public static void main(String[] args) {
@@ -10,10 +11,7 @@ public class How_many_numbers_are_smaller_than_the_current_number_1365 {
     }
 
     private static int[] smallerNumbersThanCurrent(int[] nums) {
-        int[] res=nums;
-        for (int i = 0; i <2*nums.length ; i++) {
-            
-        }
+        int[] res=new int[nums.length];
         return res;
     }
 }
