@@ -33,9 +33,15 @@ public class Count_items_matching_a_rule_1773 {
     public static int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int count=0;
         for(List<String> list : items){
-            if(list.get(0)==ruleValue && ruleKey=="type" ) count++;
-            if(list.get(1)==ruleValue && ruleKey=="color") count++;
-            if(list.get(2)==ruleValue && ruleKey=="name") count++;
+            if(ruleKey.equals("type") && list.get(0).equals(ruleValue)){
+                count++;
+            }
+            if(ruleKey.equals("color") && list.get(1).equals(ruleValue)){
+                count++;
+            }
+            if(ruleKey.equals("name") && list.get(2).equals(ruleValue)){
+                count++;
+            }
         }
         return count;
     }
